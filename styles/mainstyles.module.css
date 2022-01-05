@@ -1,0 +1,143 @@
+.main-thing {
+  font-family: Readex Pro;
+  color: #b8b8ff;
+  font-size: 15rem;
+  line-height: 12rem;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+}
+
+.star-top {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 45vh;
+  position: relative;
+  z-index: 1;
+}
+
+.backdrop {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.clouds-cls {
+  left: 0;
+  top: 0;
+  z-index: 3;
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+}
+
+.slime-cls {
+  left: 0;
+  bottom: 0;
+  top: 231.1vh;
+  position: absolute;
+  z-index: 11;
+}
+
+.star-bottom {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.shadow {
+  background: linear-gradient(#1d1142 1%, 30%, transparent);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+.mountains-cls {
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  position: absolute;
+}
+
+.sea {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 225.3vh;
+  bottom: 0;
+  left: 0;
+  transform: matrix(1, 0, 0, -0.5, 0, 0);
+  filter: url(#turbulence);
+}
+
+.moon-cls {
+  top: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 5;
+}
+
+.main-thing-finish {
+  font-family: Readex Pro;
+  color: #b8b8ff;
+  font-size: 6rem;
+  line-height: 12rem;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+}
+
+.fish-button {
+  top: 275vh;
+  right: 50.5%;
+  position: absolute;
+  z-index: 100;
+  background-color: #cddafd;
+  color: #012a4a;
+  padding: 15px 45px;
+  border-radius: 5px;
+  border: 2px solid #cddafd;
+  font-size: 1.35rem;
+  font-family: calibri;
+}
+
+.discord-button {
+  top: 275vh;
+  left: 50.5%;
+  position: absolute;
+  z-index: 100;
+  background-color: #012a4a;
+  color: #cddafd;
+  padding: 15px 45px;
+  border-radius: 5px;
+  border: 2px solid #012a4a;
+  font-size: 1.35rem;
+  font-family: calibri;
+}
+
+.fish-button-disabled {
+  opacity: 0.7;
+  top: 275vh;
+  right: 50.5%;
+  position: absolute;
+  z-index: 100;
+  background-color: #cddafd;
+  color: #012a4a;
+  padding: 15px 45px;
+  border-radius: 5px;
+  border: 2px solid #cddafd;
+  font-size: 1.35rem;
+  font-family: calibri;
+}
