@@ -93,7 +93,7 @@ async function addRole(roleId) {
             return;
         }
     maybeFullUser = JSON.parse(maybeFullUser);
-    const res = await fetch('http://theicycoldvm.eastus.cloudapp.azure.com/cow', {
+    const res = await fetch('https://lookatthose.rocks/cow', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
