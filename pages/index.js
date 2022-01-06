@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
-        <meta name="description" content="Lifelessly farm away on an etheral scenery."/>
+        <meta name="description" content="Lifelessly farm away on an ethereal scenery."/>
         <meta name="theme-color" content="rgb(94, 84, 142)"/>
         <link rel="shortcut icon" href="/Images/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Readex+Pro"/>
