@@ -18,19 +18,20 @@ export default function Clicked() {
 
     const onButtonClick = () => {
         let chance = Math.random();
-        if (chance <= 0.35) {
-            setChosenRole({
-                achievement: 'OwO (55%)',
-                role_id: '927429786849136650',
-                color: '#cc004e',
-            });
-        } else if (chance <= 0.01) {
+        if (chance <= 0.01) {
             setChosenRole({
                 achievement: 'OwO (87%)',
                 role_id: '927429886732271656',
                 color: '#5865F2',
             });
-        } else {
+        }
+        else  if (chance <= 0.35) {
+            setChosenRole({
+                achievement: 'OwO (55%)',
+                role_id: '927429786849136650',
+                color: '#cc004e',
+            });
+        }  else {
             setChosenRole({
                 achievement: 'OwO (13%)',
                 role_id: '927429712450555944',
