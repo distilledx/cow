@@ -11,7 +11,7 @@ export default function popUp({achievement, text, colour, img_link, onClick}) {
 			          <img className={popup["main-image"]} alt='' src={img_link}/>
 			        </div>
 			        <div className={popup["under"]} style={{ borderColor: `transparent ${colour} ${colour} ${colour}` }}>
-			            <div className={popup["text"]}>{text}. Achievement: <span style={{ color: colour }}>{achievement}</span></div>
+			            <div className={popup["text"]}>{text} Achievement: <span style={{ color: colour }}>{achievement}</span></div>
 			        </div>
 			      </div>
 			    </div><span className={popup["side"]}style={{ right: 0}}>Click anywhere to continue</span>
