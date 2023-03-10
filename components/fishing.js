@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Login from "../components/login.js"
+import Login from '../components/login.js';
 import mainstyles from '../styles/mainstyles.module.css';
-import PopUp from "../components/fishing_ui.js"
-import list from "../pins.json"
+import PopUp from '../components/fishing_ui.js';
+import list from '../pins.json';
 
 export default function Clicked() {
     const [displaying, changeDisplay] = useState(0);
@@ -24,14 +24,13 @@ export default function Clicked() {
                 role_id: '927429886732271656',
                 color: '#5865F2',
             });
-        }
-        else  if (chance <= 0.35) {
+        } else if (chance <= 0.35) {
             setChosenRole({
                 achievement: 'OwO (55%)',
                 role_id: '927429786849136650',
                 color: '#cc004e',
             });
-        }  else {
+        } else {
             setChosenRole({
                 achievement: 'OwO (13%)',
                 role_id: '927429712450555944',
@@ -48,13 +47,7 @@ export default function Clicked() {
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
 
     return displaying ? (
-        <PopUp
-            onClick={() => nowai(changeDisplay, changeText, disable)}
-            achievement={chosenRole.achievement}
-            text={list[chosenRole.role_id][randomKey]['caption']}
-            img_link={list[chosenRole.role_id][randomKey]['url']}
-            colour={chosenRole.color}
-        />
+        <PopUp onClick={() => nowai(changeDisplay, changeText, disable)} achievement={chosenRole.achievement} text={list[chosenRole.role_id][randomKey]['caption']} img_link={list[chosenRole.role_id][randomKey]['url']} colour={chosenRole.color} />
     ) : (
         <>
             <button
@@ -89,24 +82,23 @@ function nowai(func1, func2, func3) {
 
 async function addRole(roleId) {
     let maybeFullUser = localStorage.getItem('user');
-        if (!maybeFullUser) {
-            console.log('yeahs')
-            return;
-        }
+    if (!maybeFullUser) {
+        return;
+    }
     maybeFullUser = JSON.parse(maybeFullUser);
     const res = await fetch('https://lookatthose.rocks/cow', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify({
             action: 'addRole',
             body: {
                 user: `${maybeFullUser.id}`,
                 guild: '796060146048041020',
-                role: `${roleId}`
-            }
-        })
+                role: `${roleId}`,
+            },
+        }),
     });
     const response = await res.json();
     return response;
